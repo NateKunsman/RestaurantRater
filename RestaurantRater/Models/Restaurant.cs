@@ -13,6 +13,7 @@ namespace RestaurantRater.Models
         public int RestaurantID { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
+        [Range(1.0, 10.0)]
         public int Rating { get; set; }
     }
 
